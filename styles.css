@@ -1,0 +1,36 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+    background-color: whitesmoke;
+    color: midnightblue;
+}
+
+/* header {
+} */
+
+section {
+    margin-bottom: 20px;
+    max-width: 435px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    text-align: left;
+    height: 50px;
+    padding: auto;
+    margin-bottom: 5px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
