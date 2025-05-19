@@ -46,6 +46,12 @@ img {
 nav {
     width: 200px;
     margin-right: 20px;
+    padding: 20px 0;
+    padding-left: 10px;
+}
+
+header {
+    margin-bottom: 20px;
 }
 
 main {
