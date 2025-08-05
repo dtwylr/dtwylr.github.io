@@ -1,0 +1,30 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Merrill Datwyler</title>
+    <link>https://dtwylr.net/</link>
+    <description>Personal website of Merrill Datwyler — thoughts, links, and notes.</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Aug 2025 18:00:00 -0600</lastBuildDate>
+    <pubDate>Mon, 04 Aug 2025 18:00:00 -0600</pubDate>
+    <ttl>1800</ttl>
+
+    <item>
+      <title>Latest Post Title</title>
+      <link>https://dtwylr.net/posts/2025-08-04-example-post.html</link>
+      <description>This is a short excerpt or commentary linking to the full post or external article.</description>
+      <pubDate>Mon, 04 Aug 2025 18:00:00 -0600</pubDate>
+      <guid>https://dtwylr.net/posts/2025-08-04-example-post.html</guid>
+    </item>
+
+    <item>
+      <title>Another Post</title>
+      <link>https://dtwylr.net/posts/2025-07-30-another-post.html</link>
+      <description>This could be a link post or essay entry, just like on Daring Fireball.</description>
+      <pubDate>Wed, 30 Jul 2025 10:00:00 -0600</pubDate>
+      <guid>https://dtwylr.net/posts/2025-07-30-another-post.html</guid>
+    </item>
+  </channel>
+</rss>

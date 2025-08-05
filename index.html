@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merrill Datwyler</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="me" href="https://mastodon.social/@datwyler" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="feed.xml" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Merrill Datwyler</a></h1>
+      <div id="nav-container"></div>
+    </header>
+    <script>
+      fetch('/nav.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('nav-container').innerHTML = data;
+        });
+    </script>
 
-        <title>Merrill Datwyler</title>
+    <main>
+      <article>
+        <h2><a href="/posts/2025-08-04-example-post.html">Latest Post Title</a></h2>
+        <p class="post-date">August 4, 2025</p>
+        <p>This is a short excerpt or commentary linking to the full post or external article.</p>
+      </article>
 
-        <link rel="stylesheet" href="styles.css">
-        <link rel="me" href="https://mastodon.social/@datwyler">
-    </head>
+      <hr />
 
-    <body>
-        <div class="wrapper">
-            <div id="site-header"></div>
+      <article>
+        <h2><a href="/posts/2025-07-30-another-post.html">Another Post</a></h2>
+        <p class="post-date">July 30, 2025</p>
+        <p>This could be a link post or essay entry, just like on Daring Fireball.</p>
+      </article>
+    </main>
 
-            <main>
-                <h1>Welcome</h1>
-                <p>This is the personal website of Merrill Datwyler. You'll find an overview of projects, background information, and ways to connect.</p>
-            </main>
-        </div>
-
-        <div id="site-footer"></div>
-        <script src="scripts/include.js"></script>
-    </body>
+    <footer>
+      <p>&copy; 2025 Merrill Datwyler</p>
+    </footer>
+  </body>
 </html>

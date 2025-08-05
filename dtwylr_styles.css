@@ -1,0 +1,93 @@
+/* Base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 2rem 0 1rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #666;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+/* Links */
+a {
+  color: #00449e;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #444;
+  border-color: #444;
+}
+
+/* Code and Pre */
+code {
+  background: #eee;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+}
+
+pre {
+  background: #f0f0f0;
+  padding: 1em;
+  overflow-x: auto;
+}
+
+/* Lists */
+ul {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Layout */
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: #888;
+}
