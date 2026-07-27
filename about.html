@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Merrill Datwyler</title>
-  <link rel="stylesheet" href="dtwylr_styles.css" />
-</head>
-<body>
-  <header>
-    <h1><a href="/">Merrill Datwyler</a></h1>
-    <div id="nav-container"></div>
-  </header>
-  <script>
-    fetch('/nav.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('nav-container').innerHTML = data;
-      });
-  </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Merrill Datwyler</title>
+    <link rel="stylesheet" href="dtwylr_styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Merrill Datwyler</a></h1>
+      <div id="nav-container"></div>
+    </header>
+    <script>
+      fetch('/nav.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('nav-container').innerHTML = data;
+        });
+    </script>
 
-  <main>
-    <h2>About Me</h2>
-    <p>I'm Merrill Datwyler—an engineer, systems thinker, and curious builder. My work blends signal processing, computational photography, and neurological modeling with a deep interest in design and digital tools that improve clarity.</p>
+    <main>
+      <h2>About Me</h2>
+      <p>I'm Merrill Datwyler—an engineer, systems thinker, and curious builder. My work blends signal processing, computational photography, and neurological modeling with a deep interest in design and digital tools that improve clarity.</p>
 
-    <p>I studied electrical and computer engineering, with an academic focus on modeling, pattern recognition, and tools that serve both creativity and rigor. I care about interfaces that empower, processes that scale well, and code that’s built to last.</p>
-  </main>
+      <p>I studied electrical and computer engineering, with an academic focus on modeling, pattern recognition, and tools that serve both creativity and rigor. I care about interfaces that empower, processes that scale well, and code that's built to last.</p>
+    </main>
 
-  <footer>
-    <p>&copy; 2026 Merrill Datwyler</p>
-  </footer>
-</body>
+    <footer>
+      <p>&copy; 2026 Merrill Datwyler</p>
+    </footer>
+  </body>
 </html>
