@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.55em;
   font-family: "Hoefler Text", Georgia, "Times New Roman", serif;
   line-height: 1.3;
   text-align: left;
@@ -66,7 +66,7 @@ strong {
   text-transform: uppercase;
 }
 
-/* Links — Daring Fireball style: bottom border, no underline */
+/* Links — bottom border, no underline */
 a {
   color: #111;
   text-decoration: none;
@@ -105,7 +105,7 @@ a:hover {
   background-color: #444;
 }
 
-/* Blockquotes — Daring Fireball style */
+/* Blockquotes */
 blockquote {
   font-size: 1em;
   margin: 2em 0 2em 0.25em;
@@ -168,38 +168,43 @@ img {
   height: auto;
 }
 
-/* Layout */
-main {
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+/* Layout — two-column: sidebar + content */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Header */
-header {
-  text-align: left;
-  padding: 0;
-  margin: 0;
+.page {
+  display: flex;
+  max-width: 1060px;
+  margin: 0 auto;
+  width: 100%;
+  flex: 1;
 }
 
-header h1 {
-  margin: 0;
-  padding: 0;
+/* Sidebar column */
+aside {
+  flex: 0 0 180px;
+  padding: 2rem 1rem 2rem 1.5rem;
+}
+
+aside h1 {
   font-size: 1.55em;
   line-height: 1.3em;
+  margin: 0 0 0.5rem 0;
+  padding: 0;
 }
 
-header h1 a {
+aside h1 a {
   color: #111;
   text-decoration: none;
   border: 0;
 }
 
-/* Navigation container */
 #nav-container {
   padding: 0;
   margin: 0;
-  text-align: right;
   font-family: "Gill Sans MT", "Gill Sans", "Gill Sans Std", Verdana, "Bitstream Vera Sans", sans-serif;
   font-size: 0.91em;
   line-height: 1em;
@@ -222,7 +227,15 @@ header h1 a {
   padding: 0;
 }
 
-/* Dateline — Daring Fireball style */
+/* Content column */
+main {
+  flex: 1;
+  max-width: 700px;
+  margin: 2rem 0 2rem 1rem;
+  padding: 0 1rem;
+}
+
+/* Dateline */
 h2.dateline {
   font-family: "Gill Sans MT", "Gill Sans", "Gill Sans Std", Georgia, serif;
   font-size: 1em;
@@ -251,7 +264,7 @@ dl + h2.dateline {
   margin: 8em 0 4em 0;
 }
 
-/* Linked List entries — Daring Fireball style */
+/* Linked List entries */
 dl.linkedlist {
   color: #111;
   border-width: 0 0 0px 0;
@@ -309,7 +322,7 @@ dl.linkedlist blockquote a {
   color: #333;
 }
 
-/* Permalink star — Daring Fireball style */
+/* Permalink star */
 a.permalink {
   color: #aaa;
   border: 0;
@@ -351,4 +364,18 @@ hr {
   border-color: #888;
   border-width: 0;
   border-style: dotted;
+}
+
+/* Responsive: stack sidebar on small screens */
+@media (max-width: 640px) {
+  .page {
+    flex-direction: column;
+  }
+  aside {
+    flex: none;
+    padding: 1.5rem 1rem 1rem;
+  }
+  main {
+    margin: 1rem 0 0 0;
+  }
 }

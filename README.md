@@ -6,7 +6,7 @@ This is the source for my personal website.
 
 ## Structure
 
-A static HTML site hosted on GitHub Pages, styled after [Daring Fireball](https://daringfireball.net/).
+A static HTML site hosted on GitHub Pages with a sidebar navigation layout.
 
 | Page | Path |
 |------|------|

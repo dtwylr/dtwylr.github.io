@@ -7,43 +7,43 @@
     <link rel="stylesheet" href="dtwylr_styles.css" />
   </head>
   <body>
-    <header>
-      <h1><a href="/">Merrill Datwyler</a></h1>
-      <div id="nav-container"></div>
-    </header>
-    <script>
-      fetch('/nav.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('nav-container').innerHTML = data;
-        });
-    </script>
+    <div class="page">
+      <aside>
+        <h1><a href="/">Merrill Datwyler</a></h1>
+        <div id="nav-container"></div>
+        <script>
+          fetch('/nav.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('nav-container').innerHTML = data;
+            });
+        </script>
+      </aside>
+      <main>
+        <h2>Projects</h2>
 
-    <main>
-      <h2>Projects</h2>
+        <h3>Graduate</h3>
 
-      <h3>Graduate</h3>
+        <h4>Spectrum representation of beat signals</h4>
+        <img src="assets/projects/beat-signals.png" alt="Spectrum representation of beat signals" />
 
-      <h4>Spectrum representation of beat signals</h4>
-      <img src="assets/projects/beat-signals.png" alt="Spectrum representation of beat signals" />
+        <h4>Turbid water imaging using CycleGAN machine learning</h4>
 
-      <h4>Turbid water imaging using CycleGAN machine learning</h4>
+        <h3>Undergraduate</h3>
 
-      <h3>Undergraduate</h3>
+        <h4>Breadboard pulse oximeter with LabView data analysis</h4>
+        <img src="assets/projects/pulse-oximeter.jpeg" alt="Breadboard pulse oximeter" />
 
-      <h4>Breadboard pulse oximeter with LabView data analysis</h4>
-      <img src="assets/projects/pulse-oximeter.jpeg" alt="Breadboard pulse oximeter" />
+        <h4>MRI visualization of cardiac tissue with MATLAB</h4>
+        <img src="assets/projects/cardiac-tissue.png" alt="MRI visualization of cardiac tissue" />
 
-      <h4>MRI visualization of cardiac tissue with MATLAB</h4>
-      <img src="assets/projects/cardiac-tissue.png" alt="MRI visualization of cardiac tissue" />
+        <h4>Home balance and posturography device with Arduino</h4>
+        <img src="assets/projects/posturography.png" alt="Home balance and posturography device" />
 
-      <h4>Home balance and posturography device with Arduino</h4>
-      <img src="assets/projects/posturography.png" alt="Home balance and posturography device" />
-
-      <h4>Extracted microRNA biomarkers from plasma samples; statistical analysis linking biomarkers to atrial fibrillation</h4>
-      <img src="assets/projects/atrial-fibrillation.png" alt="MicroRNA biomarkers and atrial fibrillation analysis" />
-    </main>
-
+        <h4>Extracted microRNA biomarkers from plasma samples; statistical analysis linking biomarkers to atrial fibrillation</h4>
+        <img src="assets/projects/atrial-fibrillation.png" alt="MicroRNA biomarkers and atrial fibrillation analysis" />
+      </main>
+    </div>
     <footer>
       <p>&copy; 2026 Merrill Datwyler</p>
     </footer>

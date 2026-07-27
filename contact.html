@@ -7,31 +7,31 @@
     <link rel="stylesheet" href="dtwylr_styles.css" />
   </head>
   <body>
-    <header>
-      <h1><a href="/">Merrill Datwyler</a></h1>
-      <div id="nav-container"></div>
-    </header>
-    <script>
-      fetch('/nav.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('nav-container').innerHTML = data;
-        });
-    </script>
+    <div class="page">
+      <aside>
+        <h1><a href="/">Merrill Datwyler</a></h1>
+        <div id="nav-container"></div>
+        <script>
+          fetch('/nav.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('nav-container').innerHTML = data;
+            });
+        </script>
+      </aside>
+      <main>
+        <h2>Contact</h2>
+        <p>I'm on the internet in the following places. Please reach out to me with any comments, links, or other info:</p>
 
-    <main>
-      <h2>Contact</h2>
-      <p>I'm on the internet in the following places. Please reach out to me with any comments, links, or other info:</p>
-
-      <ul>
-        <li>Mastodon: <a href="https://mastodon.social/@datwyler">@datwyler@mastodon.social</a></li>
-        <li>Instagram: <a href="https://instagram.com/dtwylr/">@dtwylr</a></li>
-        <li>GitHub: <a href="https://github.com/dtwylr">dtwylr</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/dtwylr/">Merrill Datwyler</a></li>
-        <li>Email: <a href="mailto:merrill@dtwylr.net">merrill@dtwylr.net</a></li>
-      </ul>
-    </main>
-
+        <ul>
+          <li>Mastodon: <a href="https://mastodon.social/@datwyler">@datwyler@mastodon.social</a></li>
+          <li>Instagram: <a href="https://instagram.com/dtwylr/">@dtwylr</a></li>
+          <li>GitHub: <a href="https://github.com/dtwylr">dtwylr</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/dtwylr/">Merrill Datwyler</a></li>
+          <li>Email: <a href="mailto:merrill@dtwylr.net">merrill@dtwylr.net</a></li>
+        </ul>
+      </main>
+    </div>
     <footer>
       <p>&copy; 2026 Merrill Datwyler</p>
     </footer>

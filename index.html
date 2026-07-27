@@ -9,29 +9,29 @@
     <link rel="alternate" type="application/rss+xml" title="RSS" href="feed.xml" />
   </head>
   <body>
-    <header>
-      <h1><a href="/">Merrill Datwyler</a></h1>
-      <div id="nav-container"></div>
-    </header>
-    <script>
-      fetch('/nav.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('nav-container').innerHTML = data;
-        });
-    </script>
+    <div class="page">
+      <aside>
+        <h1><a href="/">Merrill Datwyler</a></h1>
+        <div id="nav-container"></div>
+        <script>
+          fetch('/nav.html')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('nav-container').innerHTML = data;
+            });
+        </script>
+      </aside>
+      <main>
+        <h2>Hello</h2>
+        <p>My name is Merrill Datwyler and I am an engineer. I've always been curious about the world and how things work.</p>
 
-    <main>
-      <h2>Hello</h2>
-      <p>My name is Merrill Datwyler and I am an engineer. I've always been curious about the world and how things work.</p>
+        <p>I have a bachelor's in Biomedical Engineering and am a graduate student in Computer and Electrical Engineering at the <a href="https://utah.edu/">University of Utah</a>.</p>
 
-      <p>I have a bachelor's in Biomedical Engineering and am a graduate student in Computer and Electrical Engineering at the <a href="https://utah.edu/">University of Utah</a>.</p>
+        <p>I work for a <a href="https://apple.com/">fruit company</a> based in Cupertino, California.</p>
 
-      <p>I work for a <a href="https://apple.com/">fruit company</a> based in Cupertino, California.</p>
-
-      <p>I live in Salt Lake City, Utah with my wife Griseille, my son Julien, and my two golden retrievers, <a href="https://inheritance.fandom.com/wiki/Saphira">Saphira</a> and <a href="https://lotr.fandom.com/wiki/Smaug">Smaug</a>.</p>
-    </main>
-
+        <p>I live in Salt Lake City, Utah with my wife Griseille, my son Julien, and my two golden retrievers, <a href="https://inheritance.fandom.com/wiki/Saphira">Saphira</a> and <a href="https://lotr.fandom.com/wiki/Smaug">Smaug</a>.</p>
+      </main>
+    </div>
     <footer>
       <p>&copy; 2026 Merrill Datwyler</p>
     </footer>
